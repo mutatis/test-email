@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{A6437371-868C-D70B-D223-E3BA6E9E5C6F}</ProjectGuid>
+	<ProjectGuid>{13B95569-F4AA-7648-0EA4-52A07F3EBEB7}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -48,6 +48,9 @@
   <ItemGroup>
      <Compile Include="Assets\Script\Camera.cs" />
      <Compile Include="Assets\Script\Enemy.cs" />
+     <Compile Include="Assets\Script\Nome.cs" />
+     <Compile Include="Assets\Script\Pergunta1.cs" />
+     <Compile Include="Assets\Script\Pergunta2.cs" />
      <Compile Include="Assets\Script\Player.cs" />
      <Compile Include="Assets\Script\TestEdit.cs" />
   </ItemGroup>
