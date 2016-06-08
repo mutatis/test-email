@@ -64,7 +64,7 @@ public class Player : MonoBehaviour
 
 		if((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) && jump)
 		{
-			rigidbody2D.AddForce(new Vector2(0f, 450));
+			//rigidbody2D.AddForce(new Vector2(0f, 450));
 			player.SetBool("Jump", true);
 			jump = false;
 		}

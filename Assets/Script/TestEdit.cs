@@ -5,6 +5,8 @@ using System.Net;
 using System.Net.Mail;
 using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
+using System.Net.Sockets;
+
 
 public class TestEdit : MonoBehaviour 
 {
@@ -32,8 +34,9 @@ public class TestEdit : MonoBehaviour
 		mail.Body = nome + Environment.NewLine + per1 + Environment.NewLine + per2;
 		
 		SmtpClient smtpServer = new SmtpClient("smtp.gmail.com");
-		smtpServer.Port = 587;
-		smtpServer.Credentials = new System.Net.NetworkCredential("Lootatis@gmail.com", "Select.10") as ICredentialsByHost;
+        smtpServer.Host = "smtp.gmail.com";
+        smtpServer.Port = 587;
+		smtpServer.Credentials = new System.Net.NetworkCredential("mutatisguga@gmail.com", "241295mutatisguga") as ICredentialsByHost;
 		smtpServer.EnableSsl = true;
 		ServicePointManager.ServerCertificateValidationCallback = 
 			delegate(object s, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors) 
